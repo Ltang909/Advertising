@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <meta name="description" content="Past Advertisements." /><meta name="adwords, Facebook Ads" content="Websites, Graphics, Google Adwords" />
 </head>
 <body>
@@ -31,7 +32,7 @@ Advertising
 	</a>
 </div>
 <div class="selection">
-	<a href="https://ltang909.github.io/websites/">
+<a href="https://ltang909.github.io/websites/">
 Websites
 	</a>
 </div>
@@ -108,14 +109,10 @@ Home
 	</a>
 </div>
 <div class="btmselection">
-	<a href="https://ltang909.github.io/aboutme/">
 About Me
-	</a>
 </div>
 <div class="btmselection">
-	<a href="https://ltang909.github.io/Advertising/">
 Advertising
-	</a>
 </div>
 <div class="btmselection">
 	<a href="https://ltang909.github.io/websites/">
@@ -138,7 +135,7 @@ Email Me
 </a>
 <br/>
 <br/>
-&#x24B8; &nbsp; copyright 2017 Leon Tang Designs 
+&#x24B8; &nbsp; copyright 2018 Leon Tang Designs 
 <br/>
 <br/>
 </center>
@@ -211,9 +208,15 @@ width: 85% !important;
 }
 
 @media only screen and (min-width: 500px){.mid{
-height: 1800px !important;
+height: 1400px !important;
 }
 }
+
+@media only screen and (min-width: 1800px){.mid{
+height: 2300px !important;
+}
+}
+
 @media only screen and (max-width: 500px){.mid{
 height: 1500px !important;
 }
@@ -251,7 +254,7 @@ text-decoration: none !important;
     position: fixed;
     display: inline-block;
     float: right !important;
-    width: 95%;
+    width: 100%;
 }
 
 .selection {
@@ -321,7 +324,7 @@ font-size: 1em;
 }
 
 .logo{
-width: 12%;
+width: 8%;
 float: left;
 position: fixed;
 }
@@ -377,7 +380,22 @@ background-position-y: 0px !important;
 background: url('Images/mainbg.jpg');
 background-size: cover;
 background-position-y: -200px;
-	background-attachment: fixed;
+background-attachment: fixed;
 }
 </style>
-</html
+</html>
+
+
+<script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 300) {
+	    $(".top").css("background" , "rgba(0, 0, 0, 0.5)");
+	  }
+	  else{
+		  $(".top").css("background" , "rgba(0, 0, 0, 0)");  	
+	  }
+  })
+})
+      </script>
